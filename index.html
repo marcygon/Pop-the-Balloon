@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baloon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="App">
+        <header class="App-header">
+            <div id='main'>
+                <div class="balloon" style='width:200px,height:180px'></div> 
+                    <p id="counter">Has hecho click <span id="clicks">0</span> veces.</p>
+                    <button type="button" onclick= addCounter()>Haz Click</button>
+            </div>
+        </header>
+    </div>
+
+    <script>
+        let clicks = 0;
+
+        function addCounter() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+
+            if (clicks === 1){
+                document.querySelector(".balloon").style.width = "220px";
+                document.querySelector(".balloon").style.height = "200px";
+            }
+            else if (clicks === 2){
+                document.querySelector(".balloon").style.width = "240px";
+                document.querySelector(".balloon").style.height = "220px";
+            }
+            else if (clicks === 3){
+                document.querySelector(".balloon").style.width = "260px";
+                document.querySelector(".balloon").style.height = "240px";
+            }
+            else if (clicks === 4){
+                document.querySelector(".balloon").style.width = "280px";
+                document.querySelector(".balloon").style.height = "260px";
+            }
+            else if (clicks === 5){
+                document.querySelector(".App").style.display = "none";
+
+                const img = document.createElement('img');
+                img.src = 'https://cdn.dribbble.com/users/234969/screenshots/5404808/medallion_burst_animation.gif';
+                img.style.display = 'block';
+                img.style.margin = '0 auto';
+                document.body.appendChild(img);
+            }
+        };
+    </script>
+</body>
+</html>
+
+
+
