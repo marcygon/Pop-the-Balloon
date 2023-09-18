@@ -53,18 +53,18 @@ body {
   
   .balloon {
     display: inline-block;
-    border-radius: 80%;
-    position: relative;
-    box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
-    margin: 20px 30px;
-    transition: transform 0.5s ease;
-    z-index: 10;
-    animation: balloons 4s ease-in-out infinite;
-    transform-origin: bottom center;
-    width: 200px;
-    height: 188px;
-    background: lightgreen;
-    text-align: center;
+  border-radius: 80%;
+  position: relative;
+  box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+  margin: 20px 30px;
+  transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease; 
+  z-index: 10;
+  animation: balloons 4s ease-in-out infinite;
+  transform-origin: bottom center;
+  width: 200px;
+  height: 188px;
+  background: lightgreen;
+  text-align: center;
   }
   
   .balloon:before {
@@ -76,7 +76,7 @@ body {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 20px solid lightgreen; /* Inverted triangle shape */
+    border-bottom: 20px solid lightgreen; 
     transform: translateX(-50%);
   }
   
@@ -84,8 +84,8 @@ body {
     position: absolute;
   width: 1px;
   height: 100px;
-  background: rgba(0, 0, 0, 0.2); /* Lighter string color */
-  top: 111%; /* Position it below the balloon and triangle */
+  background: rgba(0, 0, 0, 0.2); 
+  top: 111%; 
   left: 50%;
   transform: translateX(-50%);
   }

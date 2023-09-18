@@ -4,19 +4,20 @@ import './Balloon.css';
 function Balloon() {
   const [clicks, setClicks] = useState(0);
   const [exploded, setExploded] = useState(false);
+  const [balloonSize, setBalloonSize] = useState({ width: 200, height: 188 });
 
   function addCounter() {
-    setClicks(clicks + 1);
-
-    if (clicks === 3) {
-      // Trigger explosion animation after 3 clicks
+    if (clicks < 3) {
+      setBalloonSize({ width: balloonSize.width + 10, height: balloonSize.height + 10 });
+      setClicks(clicks + 1);
+    } else if (clicks === 3) {
       setExploded(true);
 
-      // Reset everything after the animation
       setTimeout(() => {
         setClicks(0);
         setExploded(false);
-      }, 1000); // Adjust the duration to match your animation
+        setBalloonSize({ width: 200, height: 188 }); 
+      }, 1000); 
     }
   }
 
@@ -24,7 +25,10 @@ function Balloon() {
     <div className="App">
       <div className="App-header">
         <div id='main'>
-          <div className={`balloon ${exploded ? "exploded-balloon" : ""}`}>
+          <div
+            className={`balloon ${exploded ? "exploded-balloon" : ""}`}
+            style={{ width: `${balloonSize.width}px`, height: `${balloonSize.height}px` }}
+          >
             {exploded ? null : <div className="string"></div>}
           </div>
           <p id="counter">You clicked <span id="clicks">{clicks}</span> times.</p>
