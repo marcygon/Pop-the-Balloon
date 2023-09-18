@@ -8,7 +8,7 @@ function Balloon() {
 
   function addCounter() {
     if (clicks < 3) {
-      setBalloonSize({ width: balloonSize.width + 10, height: balloonSize.height + 10 });
+      setBalloonSize({ width: balloonSize.width + 15, height: balloonSize.height + 15 });
       setClicks(clicks + 1);
     } else if (clicks === 3) {
       setExploded(true);
