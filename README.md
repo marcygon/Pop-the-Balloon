@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+:uk:
+## Project description: Pop the Balloon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Pop the Balloon** is a simple yet addictive game where your goal is to pop a balloon by clicking on it a certain number of times. Each click causes the balloon to increase in size until it reaches a point where it bursts. Once the balloon has popped, the click count resets, and a new balloon appears. To get started on your computer, you'll need to clone the repository and then run npm start to enjoy the game.
 
-## Available Scripts
+## :rocket:Key features on the game:
 
-In the project directory, you can run:
+**1. Balloon popping:** The game revolves around clicking on the balloon to pop it.
 
-### `npm start`
+**2. Size growth:** With each click, the balloon grows larger, adding an element of challenge to the game.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**3. Burst animation:** When the balloon reaches its bursting point, it bursts with an exciting animation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**4. Click counter reset:** After the balloon pops, the click counter is reset to zero.
 
-### `npm test`
+**5. Endless fun:** Enjoy endless fun by continuously popping balloons.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :hammer:Prerequisites
 
-### `npm run build`
+- Node.js installed on your system.
+- Git for cloning the repository.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ How to run the game
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once the prerequisites are installed, clone the repository to your local machine:
+```
+git clone https://github.com/marcygon/pop-the-balloon.git
+```
+Navigate to the project directory:
+```
+cd pop-the-balloon
+```
+Install dependencies:
+```
+npm install
+```
+Start the game:
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Now you can enjoy the addictive fun of popping balloons with Pop the Balloon!
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br><br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+:es:
+## Descripción del proyecto: Pop the Balloon
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Pop the Balloon** es un juego simple pero adictivo en el que tu objetivo es explotar un globo haciendo clic en él un número determinado de veces. Cada clic hace que el globo aumente de tamaño hasta que llega a un punto en el que explota. Una vez que el globo haya explotado, el contador de clics se reinicia y aparece un nuevo globo. Para comenzar en tu ordenador, deberás clonar el repositorio y luego ejecutar npm start para disfrutar del juego.
 
-## Learn More
+## :rocket:Características clave del juego:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**1. Explotar globos:** El juego gira en torno a hacer clic en el globo para explotarlo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**2.  Crecimiento de tamaño:** Con cada clic, el globo aumenta de tamaño, lo que añade un elemento de desafío al juego.
 
-### Code Splitting
+**3. Animación de explosión:** Cuando el globo alcanza su punto de explosión, explota con una emocionante animación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**4. Reinicio del contador de clics: :** Después de que el globo explota, el contador de clics se reinicia a cero.
 
-### Analyzing the Bundle Size
+**5. Diversión infinita:** Disfruta de la diversión infinita al explotar globos continuamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## :hammer:Requisitos previos
 
-### Making a Progressive Web App
+- Node.js instalado en tu sistema.
+- Git para clonar el repositorio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠️ Cómo ejecutar el juego
 
-### Advanced Configuration
+Clona el repositorio en tu máquina local:
+```
+git clone https://github.com/marcygon/pop-the-balloon.git
+```
+Navega hasta el directorio del proyecto:
+```
+cd pop-the-balloon
+```
+Instala las dependencias:
+```
+npm install
+```
+Inicia el juego:
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ahora puedes disfrutar de la diversión adictiva de explotar globos con Pop the Balloon!
